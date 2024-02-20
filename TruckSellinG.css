@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+button {
+    opacity: 80%;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: bolder;
+    border: 1px solid rgba(73, 6, 72, 0.5);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(6, 33, 213);
+}
+button:hover {
+    background-color: rgb(78, 38, 116);
+
+}
+html {
+    scroll-behavior: smooth;    /*Esto hace que el scroll sea suave*/
+}
+#ocultar, #ocultar2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+#americano1, #americano2, #americano3, #americano4 {
+    display: none;
+}
+#europeo1, #europeo2, #europeo3 {
+    display: none;
+}
+#secciones-de-camiones, #secciones-de-camiones2 {
+    display: none;
+}
+
+#americano1 {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("piterbilt\ pequeño.webp");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#americano1 h2 {
+    padding-bottom: 25px;
+}
+#americano1 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#americano1 button {
+    margin-top: 20px;
+}
+#americano2 {
+    display: none;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("freightliner\ cascadia\ pequeño.jfif");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#americano2 h2 {
+    padding-bottom: 25px;
+}
+#americano2 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#americano2 button {
+    margin-top: 20px;
+}
+#americano3 {
+    display: none;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("mack\ anthem\ pequeño.jfif");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#americano3 h2 {
+    padding-bottom: 25px;
+}
+#americano3 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#americano3 button {
+    margin-top: 20px;
+}
+#americano4 {
+    display: none;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("kenworth\ t680\ pequeño.avif");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#americano4 h2 {
+    padding-bottom: 25px;
+}
+#americano4 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#americano4 button {
+    margin-top: 20px;
+}
+#europeo1 {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("volvo\ de\ fondo.webp");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#europeo1 h2 {
+    padding-bottom: 25px;
+}
+#europeo1 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#europeo1 button {
+    margin-top: 20px;
+}
+#europeo2 {
+    display: none;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("mercedes\ de\ fondo.jpg");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#europeo2 h2 {
+    padding-bottom: 25px;
+}
+#europeo2 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#europeo2 button {
+    margin-top: 20px;
+}
+#europeo3 {
+    display: none;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+        ,url("scania\ de\ fondo.jpg");
+        background-size:cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    padding-top: 30px;
+    padding-bottom: 100px ;
+    padding-right:10px;
+    padding-left:10px ;
+    text-align: start;
+    align-items: center;
+    color: white;
+}
+#europeo3 h2 {
+    padding-bottom: 25px;
+}
+#europeo3 ul {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#europeo3 button {
+    margin-top: 20px;
+}
+button {
+    font-weight: bold;
+    border-radius: 4px;
+}
+header {
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+    z-index: 1000; /* Asegura que el encabezado esté sobre otros elementos */
+
+}
+header .logo {
+    padding-top:5px;
+    justify-content: center;
+}
+header .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    color: blueviolet;
+    background-color: rgb(255, 255, 255);
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+header .container a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+#hero{
+    width: 100%;
+    height: 180%;
+}
+#hero .container{
+    width: 100%;
+    height: 150%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.texto-superpuesto {
+    position: absolute;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+}
+#hero .mivideo{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: black;
+    padding-top: 100px ;
+    padding-bottom: 80px ;
+}
+
+#hero h1 {
+    opacity: 0.2;
+    padding: 10px 5px 10px 10px;
+    font-size: 1.1em;
+}
+#quienes-somos {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    background-image: url("escanias\ de\ fond.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#quienes-somos h1 {
+    padding-bottom: 45px;
+    padding-top: 80px;
+}
+
+#camiones .container{
+    font-family: 'Bebas Neue', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+#camiones {
+    padding-top: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+#camiones #carta1, #carta2 {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+#camiones #carta1 {
+    padding: 60px 106px;
+    background-image: url("mack-amarillo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#camiones #carta2 {
+    margin-top:10px ;
+    margin-bottom: 10px;
+    padding: 60px 106px;
+    background-image: url("camion-europeo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#camiones h1 {
+    padding: 15px;
+    background-color: black;
+}
+#secciones-de-camiones {
+    background-color: rgb(25, 24, 24);
+    background-image: linear-gradient();
+    background-position: center;
+    background-position: cover;
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    height: auto; /* Establecer la altura automática */
+}
+#secciones-de-camiones .container{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.Americanos {
+    display: none;
+}
+#secciones-de-camiones .Americanos li{
+    padding: 0 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    list-style-type: none;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.Americanos {
+    padding: 0;
+}
+
+.Americanos  li h4 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#Peterbilt-579 {
+    background-image: url("peterbilt.jpg")
+}
+#Freightliner-Cascadia {
+background-image: url("freightliner\ cascadia.jpg");
+}
+#Mack-Anthem {
+    background-image: url("Mack-Anthem-2018-05.png");
+}
+#Kenworth-T680 {
+    background-image: url("KENWORTH-T680-Next-Gen.jpg");
+}
+#secciones-de-camiones2 {
+    background-color: rgb(25, 24, 24);
+    background-image: linear-gradient();
+    background-position: center;
+    background-position: cover;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    height: auto; /* Establecer la altura automática */
+}
+#secciones-de-camiones2 .container{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.Americanos {
+    display: none;
+}
+#secciones-de-camiones2 .Europeos li{
+    padding: 0 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    list-style-type: none;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.Europeos {
+    padding: 0;
+}
+
+.Europeos  li h4 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#Volvo-FH {
+    background-image: url("Volvo-FH-18\ pequeño.jpg")
+}
+#Mercedes-Benz-Actros {
+background-image: url("mercedez\ pequeño.jpg");
+}
+#Scania-R-Series {
+    background-image: url("escania\ pequeño.webp");
+}
+
+#final .container{
+    padding: 80px 0px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+#final h1 {
+    font-weight: bolder;
+    text-shadow: 5px;
+    padding-top: 10px 
+}
+.mivideo2 {
+    width: 100%;
+    height: 100%;
+}
+.segundo-texto-superpuesto {
+    padding-top: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    opacity: 0.8;
+    font-size: 1.0em;
+    position: absolute;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center; 
+}
+@media (min-width:920px) {
+    #quienes-somos {
+        padding: 200px 0;
+    }
+    #camiones {
+        padding: 150px 0;
+    }
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    header nav a {
+        margin-left: 20px;
+    }
+}
+ 
